@@ -55,3 +55,14 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+.Header-text{
+    margin-top:  20%;
+    font-size: 30px;
+}
+.Header-text h1{
+    font-size: 50px;
+    margin-top: 20px;
+}
+.Header-text h1 span{
+    color:darksalmon
+}
