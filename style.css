@@ -151,3 +151,7 @@ nav ul li a:hover::after{
     font-weight: 300px;
     border-right: 10px;
 }
+
+.contact-left{
+    flex-basis: 35%;
+}
