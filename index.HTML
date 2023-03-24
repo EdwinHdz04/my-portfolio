@@ -1,94 +1,107 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <link rel="stylesheet" href="style.css">
-    <title>Personal Portfolio</title>
-    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edwin Hernandez | Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-   <div id="header">
-    <div class="container">
-        <nav>
-            <img src="Images/Edwin.jpg" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+    <header>
+        <h1><a href="#">Edwin Hernandez</a></h1>
+        <nav id="mainNav" class="headerNav">
+            <a class="navLink" href="#personalBio">About Me</a>
+            <a class="navLink" href="#projects">Projects</a>
+            <a class="navLink" href="#webPresence">Web Presence</a>
         </nav>
-        <div clas="Header-text">
-            <p>Full Stack WebDeveloper</p>
-            <h1>Hi, I'm <span>Edwin</span><br> I'm a student from UC Berkeley Bootcamp</h1>
-        </div>
-    </div>
-</div>
+    </header>
 
-<div id="About">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-             <img src="images/Background photo.jpeg">   
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil aliquam delectus quas minus libero quasi a dolore hic accusantium? Aliquid modi laboriosam repellat autem? Iste repudiandae corrupti eligendi architecto quia.</p>
+    <main>
+        <section id="personalBio">
+            <article id="aboutMe">
+                <h2>About Me</h2>
+                <img class="bioPic" src="Images/Edwin.jpg" alt=" Edwin Hernandez">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eius obcaecati ipsam dolore veniam! Recusandae corporis soluta, asperiores, excepturi, id modi neque doloribus molestias amet enim officiis est libero? Nostrum.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, laudantium corrupti neque temporibus odit exercitationem, quaerat eius rem illo quasi in quisquam. Fuga non laudantium maiores assumenda illum quam reprehenderit.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eaque, ea recusandae eveniet deserunt facere adipisci repellendus, molestiae quos eligendi quod commodi nulla necessitatibus quidem officiis fuga inventore exercitationem dicta?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum corrupti recusandae repellat maxime animi a dolore adipisci repudiandae exercitationem, consequatur iure mollitia magnam id at veniam explicabo. Culpa, facere eum?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, quia? Aspernatur accusamus dignissimos veniam, suscipit praesentium cupiditate velit atque nulla recusandae labore nostrum natus illo eos magni doloribus provident iusto!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, excepturi id. Eos, inventore eligendi! Perspiciatis sit molestiae sapiente nostrum nulla quos nisi debitis placeat tenetur impedit. Quidem velit nostrum ratione!
+                </p>
+            </article>
 
-            <div class="tab-titles">
-                <P class="tab-links active-link">Skills</P>
-                <P class="tab-links">Experience</P>
-                <P class="tab-links">Education</P>
-            </div>
-            <div class="tab-contents active-tab">
-                <ul>
-                    <li><span>HTML/CSS</span>WebDeveloper</li>     
-                    <li><span>TBA</span>TBA</li>  
-                    <li><span>TBA</span>TBA</li>   
-                </ul>
-            </div>
-            <div class="tab-contents">
-                <ul>    
-                    <li><span>TBA</span>TBA</li>  
-                    <li><span>TBA</span>TBA</li>  
-                    <li><span>TBA</span>TBA</li>  
-                </ul>
-            </div>
-            <div class="tab-contents">
-                <ul>   
-                    <li><span>TBA</span>TBA</li>  
-                    <li><span>TBA</span>TBA</li>  
-                    <li><span>TBA</span>TBA</li>  
-        </div>
-    </div>
-</div>
+            <article id="contactMe">
+                <h3 class="contactHeader">Contact Me</h3>
+                <form id="contactForm" action="#" method="get">
+                    <label for="usersFName"></label>
+                    <input type="text" name="usersFName" placeholder="First Name" id="usersFName">
+                    <label for="usersLName"></label>
+                    <input type="text" name="usersLName" placeholder="Last Name" id="usersLName">
+                    <br>
+                    <label for="company"></label>
+                    <input type="text" name="company" placeholder="Company" id="company">
+                    <label for="phoneNumber"></label>
+                    <input type="phoneNumber" name="phoneNumber" placeholder="Phone Number" id="phoneNumber" minlength="10">
+                    <br><br>
+                    <input type="submit" value="Contact Me" form="contactForm">
+                </form>
+            </article>
+        </section>
 
+        <section id="projects">
+                <article class="project">
+                    <h3 class="projectHeader">Coming Soon...</h3>
+                    <img class="projectImg" src="./assets/images/projectThumbs/shubham-dhage-WzKi0E3ZFRc-unsplash.jpg" alt="400x400px placeholder image">
+                    
+                </article>
 
-<div id="services">
-    <div class="container">
-        <div>
-          <h1 class="sub-title">My services</h1>
-          <div class="services-list">
-            <h2>web design</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis blanditiis eaque soluta natus minus mollitia commodi, illum velit sequi beatae voluptatibus sint praesentium earum maiores debitis consectetur, repudiandae ad similique.</p>
-            <a href="#">learn more</a>
-        </div>
-</div>
-<div id="Contact">
-     <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">contact me</h1>
-                <P>EdwinHernandez80@icloud.com</P>
-                <P>415.305.3751</P>
-            </div>
-        </div>
+                <article class="project">
+                    <h3 class="projectHeader">Coming Soon...</h3>
+                    <img class="projectImg" src="./assets/images/projectThumbs/shubham-dhage-WzKi0E3ZFRc-unsplash.jpg" alt="400x400px placeholder image">
+                </article>
 
-     </div>
+                <article class="project">
+                    <h3 class="projectHeader">Coming Soon...</h3>
+                    <img class="projectImg" src="./assets/images/projectThumbs/shubham-dhage-WzKi0E3ZFRc-unsplash.jpg" alt="400x400px placeholder image">
+                </article>
 
-</div>
+                <article class="project">
+                    <h3 class="projectHeader">Coming Soon...</h3>
+                    <img class="projectImg" src="./assets/images/projectThumbs/jj-ying-8bghKxNU1j0-unsplash.jpg" alt="400x400px placeholder image">
+                </article>
+
+                <article class="project">
+                    <h3 class="projectHeader">Coming Soon...</h3>
+                    <img class="projectImg" src="./assets/images/projectThumbs/joshua-sortino-LqKhnDzSF-8-unsplash.jpg" alt="400x400px placeholder image">
+                </article>
+
+                <article class="project">
+                    <h3 class="projectHeader">Coming Soon...</h3>
+                    <img class="projectImg" src="./assets/images/projectThumbs/markus-spiske-iar-afB0QQw-unsplash.jpg" alt="400x400px placeholder image">
+                </article>
+
+                <article class="project">
+                    <h3 class="projectHeader">Coming Soon...</h3>
+                    <img class="projectImg" src="./assets/images/projectThumbs/shubham-dhage-UxDU0Gg5pqQ-unsplash.jpg" alt="400x400px placeholder image">
+                </article>
+        </section>
+    </main>
+
+    <footer>
+        <section id="webPresence">
+            <article>
+            <h4>Web Presence</h4>
+            <nav class="footerNav">
+                <a href="https://github.com/EdwinHdz04" target="_blank">GitHub Repos</a>
+            </nav>
+            </article>
+        </section>
+        
+        <p class="copyright">&#169; 2022 | Created by Edwin Hernandez</p>  
+    </footer>
+    
 </body>
-
 </html>
